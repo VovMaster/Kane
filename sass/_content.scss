@@ -1,3 +1,6 @@
+.content {
+	margin-bottom: 50px;
+}
 .sidebar {
 	width: 266px;
 	float: right;
@@ -28,7 +31,6 @@
 
 .top-content h1 {
 	color: #3a4c59;
-	margin: 0 0 5px 0;
 }
 .line {
 	background: #2a90c4;
@@ -42,22 +44,65 @@
 	padding-bottom: 34px;
 }
 .col {
-	font-size: 49px;
 	font-family: 'Arvo';
+	font-size: 49px;
 	font-weight: 700;
-	margin-top: 14px;
+	line-height: 49px;
+	margin-bottom: 8px;
+	margin-top: 21px;
 }
 .block-style {
 	color: #2a90c4;
 	background: #f6f7f7;
 	text-align: center;
 	overflow: hidden;
+	display: table;
+	width: 100%;
 	h2 {
 		color: inherit;
-		margin: 0px 0 15px 0;
+		margin: 0px 0 18px 0;
 	}
 	> div {
+		display: table-cell;
+		position: relative;
+		width: 1%;
+		&:after {
+			content: " ";
+			display: block;
+			position: absolute;
+			top: 32px;
+			left: 0; 
+			bottom: 32px;
+			width: 1px;
+			background: #c5c9c9;
+		}
+		&:first-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
+.col-reviews {
+	margin-top: -18px;
+}
+
+.rating {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	list-style: none;
+	margin: 0 0 0 13px;
+	color: #f1c40f;
+	text-shadow: 0 1px #e68600;
+	font-size: 17px;
+	li {
 		float: left;
-		width: 33.33333%;
+		margin-right: 7px;
+		opacity: 0.34;
+		&.active {
+			opacity: 1;
+		}
 	}
 }
