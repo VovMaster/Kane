@@ -1,0 +1,45 @@
+.main-footer{
+	background-color: #203348;
+	padding-top: 68px;
+}
+.footer-list{
+	float: left;
+	margin-right: 63px;
+	.h3{
+		color: #47b4eb;
+		margin: 0 0 3px 0;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		float: left;
+		margin-right: 46px;
+		+ul{
+			padding-left: 30px;
+			margin-right: 16px;
+		}
+		li{
+			padding: 3px 0;
+			a{
+				color: #ffffff;
+				font-size: 10px;
+				text-decoration: none;
+				line-height: 17px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+.phone{
+	font-size: 35px;
+	color: #ffffff;
+}
+.mail{
+	color: #43a8dc;
+	font-size: 13px;
+	a{
+		color: #ffffff;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
