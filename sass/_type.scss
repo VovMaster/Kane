@@ -1,0 +1,74 @@
+//
+// Typography
+// --------------------------------------------------
+
+html, body, div {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: 'Lato';
+  color: #8f8faa;
+  font-size: 14px;
+  background: #fff;
+  line-height: 1.35714285;
+}
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Arvo';
+  font-weight: 700;
+  line-height: 1.25;
+  color: #454553;
+}
+
+h1, .h1 { font-size: 35px; }
+h2, .h2 { font-size: 30px; }
+h3, .h3 { font-size: 22px; }
+h4, .h4 { font-size: 16px; }
+h5, .h5 { font-size: 14px; }
+h6, .h6 { font-size: 12px; }
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 12px;
+}
+
+
+
+// Emphasis & misc
+// -------------------------
+
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 12px;
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}

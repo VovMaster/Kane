@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?40xmkn');
+  src:  url('fonts/icomoon.eot?40xmkn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?40xmkn') format('truetype'),
+    url('fonts/icomoon.woff?40xmkn') format('woff'),
+    url('fonts/icomoon.svg?40xmkn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Gardencare:before {
+  content: "\e902";
+}
+.icon-Gardendesign:before {
+  content: "\e903";
+}
+.icon-GutterCleaning:before {
+  content: "\e904";
+}
+.icon-HedgingNPruning:before {
+  content: "\e905";
+}
+.icon-Lawncare:before {
+  content: "\e906";
+}
+.icon-Lawnmowing:before {
+  content: "\e907";
+}
+.icon-search:before {
+  content: "\e90f";
+}
+.icon-right:before {
+  content: "\e91f";
+}
+.icon-left:before {
+  content: "\e920";
+}
+
