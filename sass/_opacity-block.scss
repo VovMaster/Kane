@@ -1,0 +1,26 @@
+.opacity-block{
+	background-color: rgba(28, 131, 187, 0.9);
+}
+.user-block{
+	width: 135px;
+	height: 135px;
+	border: 7px solid #41aee1;
+	border-radius: 100%;
+	overflow: hidden;
+	display: inline-block;
+	img{
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		display: block;
+	}
+}
+.title-large{
+	font-size: 35px;
+	color: #ffffff;
+	font-family: "Arvo";
+}
+.user-block-text{
+	display: inline-block;
+	padding: 0 21px;
+}
