@@ -15,12 +15,10 @@
 		display: table;
 		width: 100%;
 		clear: both;
-	}
+	} 
 }
 .img-style {
-	float: left;
 	border: 1px solid #e7e7e7;
-	margin: 0 25px 5px 0;
 	img {
 		display: block;
 		height: auto;
@@ -42,6 +40,10 @@
 }
 .top-content {
 	padding-bottom: 34px;
+	.img-style {
+		float: left;
+		margin: 0 25px 5px 0;
+	}
 }
 .col {
 	font-family: 'Arvo';
@@ -86,6 +88,7 @@
 
 .col-reviews {
 	margin-top: -18px;
+	margin-bottom: 22px;
 }
 
 .rating {
@@ -105,4 +108,89 @@
 			opacity: 1;
 		}
 	}
+}
+
+
+
+// reviews
+.reviews {
+	border: 1px solid #dfdfdf;
+	padding: 48px 0 9px 0;
+	p {
+		margin: 0;
+	}
+}
+.user-img {
+	width: 102px;
+	height: 102px;
+	margin-left: 40px;
+	float: left;
+	border-radius: 100%;
+	img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		border-radius: 100%;
+	}
+}
+.reviews-content {
+	margin-left: 163px;
+	padding-right: 35px;
+}
+.one-reviews {
+	margin-bottom: 50px;
+	&:after {
+		content: " ";
+		display: table;
+		width: 100%;
+		clear: both;
+	}
+}
+.date {
+	font-size: 13px;
+	font-weight: 700;
+	color: #9696a6;
+	font-family: 'Arvo';
+}
+.dot {
+	margin: 0 7px;
+}
+.reviews-content-top {
+	margin-bottom: 3px;
+	top: -6px;
+	position: relative;
+	> div {
+		display: inline-block;
+		vertical-align: bottom;
+	}
+}
+
+// img-style-group
+
+.img-style-group {
+	margin: 0 -15px;
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	li {
+		padding: 0 15px;
+		float: left;
+		width: 25%;
+	}
+	.img-style {
+		margin-bottom: 10px;
+	}
+}
+
+.listing-title {
+	color: #454553;
+	font-weight: 700;
+	font-size: 19px;
+	font-family: "Arvo";
+}
+.listing-info {
+	font-size: 13px;
+	color: #6e6e86;
+	font-family: "Arvo";
+	font-weight: 700;
 }
