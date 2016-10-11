@@ -115,7 +115,21 @@
 		}
 	}
 }
-
+.rating-light{
+	text-shadow: none;
+	margin: 0 0 0 4px;
+	li{
+		color: #898876;
+		opacity: 1;
+		margin-right: 4px;
+		&.active{
+			color: #dacf27;
+		}
+	}
+}
+.rating-small{
+	font-size: 14px;
+}
 
 
 // reviews

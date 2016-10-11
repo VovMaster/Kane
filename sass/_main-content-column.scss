@@ -1,0 +1,97 @@
+.main-content-column{
+	margin-left: 282px;
+	background-color: #f9fafa;
+	padding: 17px 28px;
+	border-top: 4px solid #2a90c4;
+	.thin-line{
+		margin: 19px 0;
+		&:after{
+			left: -28px;
+			right: -28px;
+		}
+	}
+}
+.rating-number{
+	color: #335f75;
+	font-size: 66px;
+	font-weight: 600;
+	font-family: "Arvo";
+	margin-bottom: -13px;
+}
+.rating-block{
+	padding: 0 15px;
+}
+.reviews-list{
+	padding: 33px 0;
+	p{
+		font-size: 12px;
+		line-height: 23px;
+		margin-bottom: 2px;
+		letter-spacing: 0.6px;
+	}
+	.rating{
+		margin: 0 0 1px 0;
+	}
+	.h3{
+		margin-bottom: 24px;
+	}
+	> div{
+		margin-bottom: 39px;
+	}
+}
+.bottom-review{
+	font-size: 10px;
+	color: #3a4c59;
+	font-weight: 600;
+	font-family: "Arvo";
+	a{
+		color: #2a90c4;
+		text-decoration: none;
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+}
+
+
+.notifications-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	color: #3a4c59;
+	font-weight: 600;
+	font-size: 13px;
+	font-family: "Arvo";
+	> li{
+		position: relative;
+		padding: 16px 0;
+		> a{
+			color: #335f75;
+			text-decoration: none;
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: block;
+		}
+	}
+}
+.circle{
+	width: 40px;
+	height: 40px;
+	background-color: #2a90c4;
+	color: #ffffff;
+	font-size: 23px;
+	border-radius: 100%;
+	font-family: "Lato";
+	text-align: center;
+	line-height: 40px;
+	float: left;
+}
+.notification-text{
+	margin-left: 40px;
+	padding: 2px 40px 2px 14px;
+}
+.time-posted{
+	color: #9c9cad;
+	font-style: italic;
+}
