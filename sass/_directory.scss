@@ -1,5 +1,4 @@
 .directory-column {
-	width: 1260px;
 	margin: auto;
 	overflow: hidden;
 	min-height: 100px;
@@ -11,6 +10,10 @@
 .directory-right {
 	float: left;
 	width: (550 / 1260) * 100%;
+	position: relative;
+	#map {
+		height: 970px;
+	}
 }
 .filter-search {
 	background: #ebebeb;
@@ -39,11 +42,13 @@
 	}
 	.item-content-right {
 		margin-left: 155px;
-		margin-bottom: -12px;
 	}
 	h3 {
 		font-size: 19px;
 		margin: 4px 0 1px 0;
+	}
+	p {
+		margin-bottom: 0;
 	}
 	.h6 {
 		font-size: 12px;
@@ -73,4 +78,27 @@
 .load-more-wrap {
 	text-align: center;
 	padding: 26px 0 44px 0;
+}
+
+.popup-map {
+	box-shadow: 0 5px 16px rgba(0, 0, 0, 0.28);
+	background: #fbfbfd;
+	border: 1px solid #ddddde;
+	padding: 15px 12px;
+	width: 392px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 999;
+	.item-content {
+		margin: 0;
+		padding: 0;
+	}
+	.item-content .img-style {
+		width: 107px;
+	}
+	.item-content .item-content-right {
+		margin-left: 122px;
+	}
 }

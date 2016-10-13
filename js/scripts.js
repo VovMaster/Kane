@@ -19,4 +19,13 @@ $(document).ready(function() {
 		}
 	});
 
+	
+	$('.select-style').ikSelect({
+		autoWidth: false,
+		ddFullWidth: false,
+		equalWidths: false,
+		dynamicWidth: false
+		
+	});
+
 });

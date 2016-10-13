@@ -1,7 +1,12 @@
 .main-content-column{
-	margin-left: 282px;
+	width: (710 / 976) * 100%;
+	padding-left: 16px;
+	float: right;
+}
+.border-block {
 	background-color: #f9fafa;
 	padding: 17px 28px;
+	margin-bottom: 20px;
 	border-top: 4px solid #2a90c4;
 	.thin-line{
 		margin: 19px 0;
@@ -86,10 +91,16 @@
 	text-align: center;
 	line-height: 40px;
 	float: left;
+	img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		border-radius: 100%;
+	}
 }
 .notification-text{
 	margin-left: 40px;
-	padding: 2px 40px 2px 14px;
+	padding: 2px 0px 2px 14px;
 }
 .time-posted{
 	color: #9c9cad;

@@ -100,6 +100,9 @@
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and </p>
 				<p>scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 			</section>
+
+			<section id="map" class="directory-map"></section>
+
 			<section class="content table-link">
 				<a href="">
 					<span class="wrap-icon"><i class="icon-Gardencare"></i></span>
@@ -253,6 +256,78 @@
 		</ul>
 	</section>
 </div>
+
+
+
+
+<div class="popup-maps">
+	<div class="popup-map">
+		<div class="item-content">
+			<div class="img-style">
+				<img src="images/jim's-fencing.png" alt="Jim's Fencing">
+			</div>
+			<div class="item-content-right">
+				<h3>Jim’s Fencing Business</h3>
+				<div class="h6">Albion VIC</div>
+				<div class="h6">7 Reviews</div>
+				<div class="h3 text-primary">$ 150,000</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-map">
+		<div class="item-content">
+			<div class="img-style">
+				<img src="images/jim's-fencing.png" alt="Jim's Fencing">
+			</div>
+			<div class="item-content-right">
+				<h3>Jim’s Fencing Business</h3>
+				<div class="h6">Albion VIC</div>
+				<div class="h6">7 Reviews</div>
+				<div class="h3 text-primary">$ 150,000</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-map">
+		<div class="item-content">
+			<div class="img-style">
+				<img src="images/jim's-fencing.png" alt="Jim's Fencing">
+			</div>
+			<div class="item-content-right">
+				<h3>Jim’s Fencing Business</h3>
+				<div class="h6">Albion VIC</div>
+				<div class="h6">7 Reviews</div>
+				<div class="h3 text-primary">$ 150,000</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-map">
+		<div class="item-content">
+			<div class="img-style">
+				<img src="images/jim's-fencing.png" alt="Jim's Fencing">
+			</div>
+			<div class="item-content-right">
+				<h3>Jim’s Fencing Business</h3>
+				<div class="h6">Albion VIC</div>
+				<div class="h6">7 Reviews</div>
+				<div class="h3 text-primary">$ 150,000</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-map">
+		<div class="item-content">
+			<div class="img-style">
+				<img src="images/jim's-fencing.png" alt="Jim's Fencing">
+			</div>
+			<div class="item-content-right">
+				<h3>Jim’s Fencing Business</h3>
+				<div class="h6">Albion VIC</div>
+				<div class="h6">7 Reviews</div>
+				<div class="h3 text-primary">$ 150,000</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <footer class="main-footer">
 	<div class="container clearfix">
 		<div class="wrap-footer-lists clearfix">
@@ -360,6 +435,203 @@
 	</div>
 </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+
+ <script>
+
+
+	function initMap() {
+
+		var marker;
+		var markersALL = [];
+
+		var markers = [
+			{
+				positionY: -37.2082852,
+				positionX: 144.95842289
+			},
+			{
+				positionY: -37.6082852,
+				positionX: 145.15842289
+			},
+			{
+				positionY: -37.6082852,
+				positionX: 144.75842289
+			},
+			{
+				positionY: -36.6082852,
+				positionX: 145.15842289
+			},
+			{
+				positionY: -36.6082852,
+				positionX: 144.75842289
+			}
+
+		];
+
+
+
+		var myLatlng = new google.maps.LatLng(markers[0].positionY, markers[0].positionX);
+
+		var markerImage = new google.maps.MarkerImage(
+		    'images/marker.png',
+		    new google.maps.Size(78,74),
+		    new google.maps.Point(0,0),
+		    new google.maps.Point(27,65)
+		);
+
+		var markerImage2 = new google.maps.MarkerImage(
+		    'images/marker2.png',
+		    new google.maps.Size(78,74),
+		    new google.maps.Point(0,0),
+		    new google.maps.Point(27,65)
+		);
+
+		var map = new google.maps.Map(document.getElementById('map'), {
+			scrollwheel: false,
+			zoom: 9,
+			center: myLatlng
+		});
+
+
+
+		var myLatlngStatic1 = new google.maps.LatLng(-37.8082852, 144.95842289);
+		var myLatlngStatic2 = new google.maps.LatLng(-37.0082852,  145.15842289);
+
+		markerStatic1 = new google.maps.Marker({
+			position: myLatlngStatic1,
+			map: map
+		});
+
+		markerStatic2 = new google.maps.Marker({
+			position: myLatlngStatic2,
+			map: map
+		});
+
+
+
+
+
+
+		function addMarker(thisMarker) {
+
+
+			for (var i = 0; i < markers.length; i++) {
+
+
+				var myLatlng = new google.maps.LatLng(markers[i].positionY, markers[i].positionX);
+
+				if(thisMarker == i){
+					markerImageVar = markerImage2;
+					thisMarker = '-';
+				}else {
+					markerImageVar = markerImage;
+				}
+
+
+
+				marker = new google.maps.Marker({
+				  icon: markerImageVar,
+				  position: myLatlng,
+				  map: map,
+				  title:"Google Maps!"
+				});
+
+				markersALL.push(marker);
+
+				var PosX;
+				var PosY;
+
+				$('#map').on( "click", function( event ) {
+					PosX = event.pageX;
+					PosY = event.pageY;
+				});
+
+
+
+				marker.addListener('click', function(e) {
+
+					for (var i = 0; i < markersALL.length; i++) {
+						if(markersALL[i].internalPosition == e.latLng) {
+							thisMarker = i;
+						}
+					}
+
+					var popupMap = thisMarker + 1;
+
+
+					function func() {
+						console.log(PosX);
+						console.log(PosY);
+						$('.popup-map').hide().removeClass('active');
+						$('.popup-maps > .popup-map:nth-child(' + popupMap + ')').show().addClass('active').css({
+							top: PosY - 150,
+							left: PosX - 196
+						});
+						clearMarker();
+						addMarker(thisMarker);
+					}
+
+					setTimeout(func, 100);
+
+
+				});
+
+
+
+
+
+
+
+			}
+		}
+
+
+		addMarker();
+
+
+
+
+		function clearMarker() {
+
+			  for (var i = 0; i < markersALL.length; i++) {
+			    markersALL[i].setMap(null);
+			  }
+			markersALL = [];
+
+
+		}
+
+		$('h3').click(function(){
+			clearMarker();
+			addMarker();
+		});
+
+
+		$(document).mouseup(function (e){ 
+			var div = $(".popup-map"); 
+			if (!div.is(e.target) 
+			    && div.has(e.target).length === 0) { 
+
+				if(div.hasClass('active')) {
+					div.hide().removeClass('active'); 
+				}else {
+					
+				}
+
+			}
+		});
+
+
+	}
+
+	google.maps.event.addDomListener(window, 'load', initMap);
+
+
+
+
+    </script>
+<script type="text/javascript" src="js/jquery.ikSelect.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 

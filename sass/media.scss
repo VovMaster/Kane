@@ -1,0 +1,146 @@
+@media (max-width: 1300px) {
+	.directory-left {
+		width: 100%;
+		float: none;
+	}
+	.directory-right {
+		width: 100%;
+		float: none;
+	}
+	.directory-right #map {
+		height: 400px;
+	}
+}
+@media (max-width: 1006px) {
+
+}
+@media (max-width: 767px) {
+	.left-column {
+		float: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.main-content-column{
+		float: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.nav-tabs li {
+		width: 33.33333%;
+		border-bottom: 5px solid #fff;
+		&:nth-child(3n + 1) {
+			border-left: none;
+		}
+	}
+	.filter-search > div {
+		width: 100% !important;
+	}
+	.item-content .img-style {
+		width: 60px;
+	}
+	.item-content .item-content-right {
+		margin-left: 70px;
+	}
+	.recent-reviews .rating-block {
+		float: none;
+		width: auto;
+	}
+	.recent-reviews-content {
+		margin: 10px;
+	}
+	.border-block {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.col6 {
+		float: none;
+		width: 100%;
+	}
+	.border-block .thin-line::after {
+		left: -10px;
+		right: -10px;
+	}
+	.tabs-style a {
+		font-size: 12px;
+		line-height: 27px;
+		padding: 5px 14px 0;
+	}
+	.one-column .item-content .img-style {
+		width: 60px;
+	}
+	.one-column .item-content .item-content-right {
+		margin-right: 0;
+		margin-left: 70px;
+	}
+	.one-column .item-content .item-content-right h3 {
+		margin-top: 0;
+	}
+	.button-right {
+		position: static;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.pagination {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0 5px;
+	}
+	.table-item-img {
+		width: 60px;
+	}
+	.table-item-table {
+		margin: 0 0 0 70px;
+	}
+	.notifications-jobs-content {
+	    margin: 5px 60px 5px 0;
+	}
+	.table-item-button {
+		margin: 20px 0 0 0;
+		position: static;
+		width: 100%;
+		a {
+			width: 100%;
+		}
+	}
+	.wrap-table-style {
+		margin-left: -25px;
+		margin-right: -25px;
+	}
+	.col4 {
+		width: 100%;
+		float: none;
+	}
+	.table-style thead {
+		display: none;
+	}
+	.table-style {
+		display: block;
+		width: 100%;
+		text-align: center;
+		tr, td, tbody {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		td {
+			padding: 5px;
+		}
+		td:first-child, td:last-child {
+			padding: 5px;
+		}
+		tr {
+			margin-bottom: 20px;
+		}
+	}
+	.table-style td.width-next-link {
+		height: 40px;
+	}
+	.table-style td.width-next-link .next-link {
+		background: #335f75;
+		i {
+			color: #fff;
+		}
+	}
+}

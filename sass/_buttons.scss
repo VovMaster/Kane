@@ -22,6 +22,8 @@ button::-moz-focus-inner { border: 0; padding: 0; }
   line-height: 20px;
   height: 40px;
   padding: 9px 20px;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
   &:before, &:after {
     display: none;
   }
@@ -83,15 +85,30 @@ button::-moz-focus-inner { border: 0; padding: 0; }
 .btn-blue {
   border: 1px solid #2a90c4;
   background: #2a90c4;
+  &:hover {
+    background: #167db7;
+    border-color: #167db7;
+    text-decoration: none;
+  }
 }
 .btn-blue-dark {
   border: 1px solid #167db7;
   background: #167db7;
+  &:hover {
+    background: #003d77;
+    border-color: #003d77;
+    text-decoration: none;
+  }
 }
 .btn-blue-border {
   border: 1px solid #2a90c4;
   background: transparent;
   color: #2c4552;
+  &:hover {
+    background: #2a90c4;
+    color: #fff;
+    text-decoration: none;
+  }
 }
 .btn-blue-text {
   color: #2a90c4;
@@ -101,14 +118,34 @@ button::-moz-focus-inner { border: 0; padding: 0; }
   color: #f2fd95;
   border: 1px solid #f2fd95;
   background: transparent;
+  &:hover {
+    background: #c9d46c;
+    border-color: #c9d46c;
+    text-decoration: none;
+    color: #fff;
+  }
 }
 .btn-gray {
   color: #2c4552;
   border: 1px solid #a6c1cf;
   background: #a6c1cf;
+  &:hover {
+    background: #7c97a5;
+    border-color: #7c97a5;
+    text-decoration: none;
+    color: #fff;
+  }
 }
+
+
 
 .btn-gray-dark {
   background: #3a4c59;
   border: 1px solid #3a4c59;
+  &:hover {
+    background: #0f212e;
+    border-color: #0f212e;
+    text-decoration: none;
+    color: #fff;
+  }
 }

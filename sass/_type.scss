@@ -40,6 +40,13 @@ p {
   margin: 0 0 12px;
 }
 
+a {
+  color: #3d9ebe;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 
 // Emphasis & misc
@@ -88,4 +95,7 @@ h4 {
 
 .text-primary {
   color: #2a90c4;
+}
+.text-primary-black {
+  color: #2a4755;
 }
