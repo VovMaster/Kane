@@ -5,11 +5,13 @@
 }
 .directory-left {
 	float: left;
-	width: (710 / 1260) * 100%;
+	/*width: (710 / 1260) * 100%;*/
+	width: 67%;
 }
 .directory-right {
 	float: left;
-	width: (550 / 1260) * 100%;
+	/*width: (550 / 1260) * 100%;*/
+	width: 33%;
 	position: relative;
 	#map {
 		height: 970px;

@@ -89,7 +89,7 @@
 		border-top: none;
 	}
 }
-.ik_select_list .ik_select_option.ik_select_hover{
+.ik_select_list .ik_select_option.ik_select_hover, .ik_select_list .ik_select_option.ik_select_active{
 	background:#f1f2f5;
 	color: #248cdd;
 }
@@ -108,7 +108,6 @@
 	background:#fff;
 	border-color: #000;
 	cursor:default;
-	margin-top: 6px;
 	ul{
 		color: #585858;
 		padding: 0;

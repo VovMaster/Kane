@@ -28,4 +28,13 @@ $(document).ready(function() {
 		
 	});
 
+	$('.tabs-style a').click(function() {
+		var dateTab = $(this).attr('date-tab');
+		$('.tabs-style li').removeClass('active');
+		$(this).parent().addClass('active');
+		$('[date-tabcontent]').removeClass('active');
+		$('[date-tabcontent=' + dateTab + ']').addClass('active');
+		return false
+	})
+
 });
